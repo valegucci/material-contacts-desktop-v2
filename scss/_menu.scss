@@ -1,0 +1,73 @@
+.menu {
+    left: 0;
+    right: initial;
+    display: none;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+    z-index: 6;
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 100%;
+    border-right-width: 1px;
+    border-right-style: solid;
+    overflow: hidden;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.opened {
+        display: flex;
+    }
+}
+.menu-header {
+    background-image: url(./img/material-design-wallpaper-1.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:before {
+        display: block;
+        content: "";
+        margin-top: 160px;
+    }
+}
+.menu-header-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.menu-header-name {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.menu-header-email {
+    font-weight: 400;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.menu-header-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-top: 24px;
+    margin-left: 16px;
+}
+.menu-header-drop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    opacity: 0.87;
+}
+.menu-content{
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}

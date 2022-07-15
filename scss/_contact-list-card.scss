@@ -1,0 +1,38 @@
+.contact-list-card {
+    padding: 24px;
+    &.contact-card-opened {
+        margin-right: 464px;
+    }
+    .list-item{
+        cursor: pointer;
+        &:hover{
+            background-color: #efefef;
+        }
+    }
+}
+.contact-list-thumbnail {
+    width: auto;
+    height: auto;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+.list-group-graphic {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    &.letter {
+        left: 2px;
+    }
+    &.secondary {
+        color: $secondary_color;
+    }
+    &.primary {
+        color: $primary_color;
+    }
+}
+.contact-list-separator {
+    margin-top: 16px;
+}
